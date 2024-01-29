@@ -1,22 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import ButtonComponent from "./ButtonComponent";
+import ImageComponent from "./ImageComponent";
+
+const where = "qui";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+        <ImageComponent src="http://www.placedog.net/200" alt="dog" />
+        <img
+          src="http://placebear.com/200/200"
+          className="App-logo"
+          alt="logo"
+        />
+        <p>Esercizio React!</p>
+        <ButtonComponent textToShow="bottone1" />
         <a
           className="App-link"
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Learn React, clilcca {where}
         </a>
+        <ButtonComponent textToShow="bottone2" />
       </header>
     </div>
   );
